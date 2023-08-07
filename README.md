@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TSDX React w/ Storybook User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
@@ -179,3 +180,6 @@ Change the `alias` to point to where those packages are actually installed. This
 ```
 
 An alternative to fixing this problem would be to remove aliases altogether and define the dependencies referenced as aliases as dev dependencies instead. [However, that might cause other problems.](https://github.com/palmerhq/tsdx/issues/64)
+=======
+# books
+>>>>>>> d8a081972962683757a1ca7d2369d3d129d0ff62
