@@ -16,3 +16,6 @@ export const Thing: FC<Props> = ({ children }) => {
 
 export * from './components/Button'
 export * from './components/Card'
+export * from './components/Tag'
+export * from './components/OptionsGroup'
+export * from './components/TextField'
