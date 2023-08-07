@@ -1,3 +1,17 @@
+# v0.2.4 (Mon Aug 07 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/makenrosa/books ([@MakenRosa](https://github.com/MakenRosa))
+- docs: update components folder in storybook ([@MakenRosa](https://github.com/MakenRosa))
+- feat: add InputQuantity component ([@MakenRosa](https://github.com/MakenRosa))
+
+#### Authors: 1
+
+- Maken Cristhian ([@MakenRosa](https://github.com/MakenRosa))
+
+---
+
 # v0.2.3 (Mon Aug 07 2023)
 
 #### 🐛 Bug Fix
