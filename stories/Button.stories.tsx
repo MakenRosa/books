@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../src'
+import { Button, ButtonProps } from '../src'
 
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
@@ -8,6 +8,18 @@ export default {
     component: Button
 } as ComponentMeta<typeof Button>
 
-const Template: ComponentStory<typeof Button> = () => <Button />
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
-export const Primary = Template.bind({})
+export const Container = Template.bind({})
+
+Container.args = {
+    text: 'This is a button',
+    variant: 'container'
+} as ButtonProps
+
+
+export const outline = Template.bind({})
+outline.args = {
+    text: 'This is a button',
+    variant: 'outline'
+} as ButtonProps
