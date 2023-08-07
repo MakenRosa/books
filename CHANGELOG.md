@@ -1,3 +1,16 @@
+# v0.2.5 (Mon Aug 07 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/makenrosa/books ([@MakenRosa](https://github.com/MakenRosa))
+- docs: update readme ([@MakenRosa](https://github.com/MakenRosa))
+
+#### Authors: 1
+
+- Maken Cristhian ([@MakenRosa](https://github.com/MakenRosa))
+
+---
+
 # v0.2.4 (Mon Aug 07 2023)
 
 #### ⚠️ Pushed to `main`
