@@ -4,8 +4,9 @@ import { TextField, TextFieldProps } from '../src'
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
-  title: 'TextField',
+  title: 'components/TextField',
   component: TextField,
+  parameters: { actions: { argTypesRegex: '^on.*' } },
 } as ComponentMeta<typeof TextField>
 
 const Template: ComponentStory<typeof TextField> = (args) => <TextField {...args} />

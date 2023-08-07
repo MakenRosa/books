@@ -4,8 +4,9 @@ import { Button, ButtonProps } from '../src'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 export default {
-    title: 'Button',
-    component: Button
+    title: 'components/Button',
+    component: Button,
+    parameters: { actions: { argTypesRegex: '^on.*' } },
 } as ComponentMeta<typeof Button>
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />

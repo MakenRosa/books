@@ -4,8 +4,9 @@ import { Tag, TagProps } from '../src'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 export default {
-    title: 'Tag',
-    component: Tag
+    title: 'components/Tag',
+    component: Tag,
+    parameters: { actions: { argTypesRegex: '^on.*' } },
 } as ComponentMeta<typeof Tag>
 
 const Template: ComponentStory<typeof Tag> = (args) => <Tag {...args} />

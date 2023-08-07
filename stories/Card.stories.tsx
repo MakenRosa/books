@@ -4,8 +4,9 @@ import { Card } from '../src'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 export default {
-    title: 'Card',
-    component: Card
+    title: 'components/Card',
+    component: Card,
+    parameters: { actions: { argTypesRegex: '^on.*' } },
 } as ComponentMeta<typeof Card>
 
 const Template: ComponentStory<typeof Card> = () => 

@@ -4,8 +4,9 @@ import { OptionsGroup } from '../src'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 export default {
-    title: 'OptionsGroup',
-    component: OptionsGroup
+    title: 'components/OptionsGroup',
+    component: OptionsGroup,
+    parameters: { actions: { argTypesRegex: '^on.*' } },
 } as ComponentMeta<typeof OptionsGroup>
 
 const Template: ComponentStory<typeof OptionsGroup> = (args) => <OptionsGroup {...args}/>
