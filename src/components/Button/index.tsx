@@ -1,21 +1,36 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-const StyledButton = styled.button`
-    background-color: #EB9B00;
+export interface ButtonProps {
+    text?: string
+    variant?: 'container' | 'outline'
+    onClick?: () => void
+}
+
+const StyledButton = styled.button<ButtonProps>`
+    background-color: ${(props: ButtonProps) => props.variant === 'container' ? '#EB9B00' : '#fff'};
     padding: 16px 32px;
     border: 2px solid #EB9B00;
-    color: #fff;
+    color: ${(props: ButtonProps) => props.variant === 'container' ? '#FFF' : '#EB9B00'};
     font-size: 20px;
     cursor: pointer;
-    &:hover {
-        background-color: #BB7900;
-        border: 2px solid #BB7900;
-    }
+    ${(props: ButtonProps) => 
+    props.variant === 'container' 
+    ? css`
+        &:hover {
+            background-color: #B87900;
+            border: 2px solid #B87900;
+        }`
+        : css`
+        &:hover {
+            background-color: #fff;
+            border: 2px solid #B87900;
+        }`
+    };
 `
 
-export const Button = () => {
-    return (<StyledButton>
-        Click me!
+export const Button = ({text, onClick, variant = 'container'}: ButtonProps) => {
+    return (<StyledButton onClick={onClick} variant={variant}>
+        {text}
     </StyledButton>)
 }
